@@ -70,7 +70,7 @@ logging.basicConfig(stream=sys.stdout, format='%(asctime)s - %(levelname)s - %(m
 @click.option('--verbose', '-v',
               help="Set the vebosity level: -v (only warinings) -vv (warinings and info) -vvv (warinings, info and debug)",
               count=True, default=1)
-def run10x(samplefolder: str, outputfolder, str, gtffile: str,
+def run10x(samplefolder: str, outputfolder: str, gtffile: str,
            metadatatable: str, mask: str, logic: str, multimap: bool,
            samtools_threads: int, samtools_memory: int, dtype: str, dump: str, verbose: str) -> None:
     """Runs the velocity analysis for a Chromium 10X Sample
